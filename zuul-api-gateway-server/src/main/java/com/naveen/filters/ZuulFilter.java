@@ -22,7 +22,7 @@ public class ZuulFilter extends com.netflix.zuul.ZuulFilter {
 	@Override
 	public Object run() throws ZuulException {
 		HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
-		logger.info("<<request>>",request);
+		logger.info("<<stock-request>>"+request.getRequestURI());
 		return null;
 	}
 
